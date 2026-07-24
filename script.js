@@ -1,11 +1,5 @@
 
-        // ===== LOADING SCREEN =====
-        window.addEventListener('load', () => {
-            setTimeout(() => {
-                document.getElementById('loader').classList.add('hidden');
-            }, 800);
-        });
-
+ 
         // ===== SCROLL PROGRESS BAR =====
         const scrollProgress = document.getElementById('scrollProgress');
         window.addEventListener('scroll', () => {

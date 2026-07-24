@@ -8,17 +8,13 @@
     <title>TAHA | Web Developer</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- LOADING SCREEN -->
-    <div class="loader-screen" id="loader">
-        <div class="loader-ring"></div>
-        <div class="loader-text">Loading</div>
-    </div>
-
+  
     <!-- SCROLL PROGRESS -->
     <div class="scroll-progress" id="scrollProgress"></div>
 
@@ -66,9 +62,9 @@
                     digital experiences.</p>
                 <div class="social-links">
                     <a href="https://github.com/tahaamindev" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <!-- <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
                     <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a> -->
                 </div>
                 <div class="hero-buttons">
                     <button class="btn-primary" onclick="showToast('CV download started!', 'fa-solid fa-download')">
@@ -82,7 +78,7 @@
             </div>
             <div class="image">
                 <div class="image-wrapper">
-                    <img src="main.png" alt="TAHA">
+                    <img src="images/main.png" alt="TAHA">
                     <div class="floating-badge badge-1">
                         <i class="fa-solid fa-code"></i> Clean Code
                     </div>
@@ -128,10 +124,10 @@
             </div>
             <div class="about-content">
                 <div class="about-image reveal-left">
-                    <img src="about.png" alt="TAHA">
+                    <img src="images/about.png" alt="TAHA">
                 </div>
                 <div class="about-text reveal-right">
-                    <h3>I'm a <span>Junior Web Developer</span></h3>
+                    <h3>I'm a <span> Web Developer</span></h3>
                     <p>Hello! I'm TAHA, a passionate and dedicated web developer with a strong enthusiasm for building
                         modern, responsive websites. I started my coding journey with a curiosity for how websites work
                         and have since developed a solid foundation in front-end technologies.</p>
@@ -140,19 +136,19 @@
                         frameworks.</p>
                     <div class="skills-grid">
                         <div class="skill-item">
-                            <label>HTML & CSS <span>90%</span></label>
+                            <label>HTML5<span>93%</span></label>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill" data-width="93"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <label>CSS3 <span>90%</span></label>
                             <div class="skill-bar">
                                 <div class="skill-bar-fill" data-width="90"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <label>JavaScript <span>75%</span></label>
-                            <div class="skill-bar">
-                                <div class="skill-bar-fill" data-width="75"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <label>React <span>60%</span></label>
+                            <label>JavaScript <span>60%</span></label>
                             <div class="skill-bar">
                                 <div class="skill-bar-fill" data-width="60"></div>
                             </div>
@@ -237,11 +233,11 @@
             <div class="projects-grid" id="projectsGrid">
                 <div class="project-card reveal" data-category="app">
                     <div class="project-image">
-                        <i class="fa-solid fa-list-check"></i>
+                        <img src="images/T-Attendie.gif" class="fa-solid fa-list-check"></img>
                         <div class="project-overlay">
-                            <a href="#" class="overlay-btn" aria-label="Live Demo"><i
+                            <a href="https://tahaamindev.github.io/T-Attendie/" class="overlay-btn" aria-label="Live Demo"><i
                                     class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                            <a href="#" class="overlay-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://github.com/tahaamindev/T-Attendie" class="overlay-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
                         </div>
                     </div>
                     <div class="project-content">
@@ -254,35 +250,61 @@
                             <span class="tech-tag">JavaScript</span>
                         </div>
                         <div class="project-buttons">
-                            <a href="#" class="project-btn btn-live">Live Demo</a>
-                            <a href="#" class="project-btn btn-github">GitHub</a>
+                            <a href="https://tahaamindev.github.io/T-Attendie/" class="project-btn btn-live">Live Demo</a>
+                            <a href="https://github.com/tahaamindev/T-Attendie" class="project-btn btn-github">GitHub</a>
                         </div>
                     </div>
                 </div>
                 <div class="project-card reveal" data-category="web">
                     <div class="project-image">
-                        <i class="fa-solid fa-briefcase"></i>
+                        <img src="images/JK-Collection.gif" class="fa-solid fa-briefcase"></i>
                         <div class="project-overlay">
-                            <a href="#" class="overlay-btn" aria-label="Live Demo"><i
+                            <a href="https://tahaamindev.github.io/JK-Collection/" class="overlay-btn" aria-label="Live Demo"><i
                                     class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                            <a href="#" class="overlay-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://github.com/tahaamindev/JK-Collection" class="overlay-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>Portfolio Website</h3>
-                        <p>A modern, responsive personal portfolio showcasing projects and skills with smooth animations
-                            and dark theme.</p>
+                        <h3>JK-Collection</h3>
+                        <p>A modern, responsive "JK-Collection" ecommerce online store showcasing products with smooth animations
+                            and Whatsapp ordering feature.</p>
                         <div class="tech-stack">
                             <span class="tech-tag">HTML</span>
                             <span class="tech-tag">CSS</span>
                             <span class="tech-tag">JavaScript</span>
                         </div>
                         <div class="project-buttons">
-                            <a href="#" class="project-btn btn-live">Live Demo</a>
-                            <a href="#" class="project-btn btn-github">GitHub</a>
+                            <a href="https://tahaamindev.github.io/JK-Collection/" class="project-btn btn-live">Live Demo</a>
+                            <a href="https://github.com/tahaamindev/JK-Collection" class="project-btn btn-github">GitHub</a>
                         </div>
                     </div>
                 </div>
+
+                <div class="project-card reveal" data-category="web">
+                    <div class="project-image">
+                        <img src="images/AIMZ.gif" class="fa-solid fa-briefcase"></i>
+                        <div class="project-overlay">
+                            <a href="https://tahaamindev.github.io/AIMZ/" class="overlay-btn" aria-label="Live Demo"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="https://github.com/tahaamindev/AIMZ" class="overlay-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>AIMZ Hub</h3>
+                        <p>A modern, responsive "AIMZ Hub" ecommerce online store showcasing products with smooth animations and unique dark & Golden 
+                            theme. Interactive and highly Ui Designed</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://tahaamindev.github.io/AIMZ/" class="project-btn btn-live">Live Demo</a>
+                            <a href="https://github.com/tahaamindev/AIMZ" class="project-btn btn-github">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="project-card reveal" data-category="app">
                     <div class="project-image">
                         <i class="fa-solid fa-cloud-sun"></i>
