@@ -223,7 +223,12 @@
     window.addEventListener("pointermove", (event) => {
       if (frame) cancelAnimationFrame(frame);
       frame = requestAnimationFrame(() => {
-        cursor.style.transform = `translate3d(${event.clientX}px, ${event.clientY}px, 0)`;
+        const edge = 11;
+        const maxX = Math.max(edge, document.documentElement.clientWidth - edge);
+        const maxY = Math.max(edge, window.innerHeight - edge);
+        const x = Math.min(Math.max(event.clientX, edge), maxX);
+        const y = Math.min(Math.max(event.clientY, edge), maxY);
+        cursor.style.transform = `translate3d(${x}px, ${y}px, 0)`;
         frame = 0;
       });
     }, { passive: true });
