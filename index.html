@@ -1,288 +1,254 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#f4f7fc">
-    <meta name="description"
-        content="Taha Amin is a web developer building thoughtful, responsive websites and digital experiences.">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0b0b0c">
+    <meta name="description" content="The portfolio of M Taha Amin — a student, web developer, AI explorer and visual creator in Islamabad.">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Taha Amin | Web Developer">
-    <meta property="og:description"
-        content="Thoughtful, responsive websites and digital experiences, designed and built with care.">
+    <meta property="og:title" content="M Taha Amin — Web Developer &amp; AI Explorer">
+    <meta property="og:description" content="A student in Islamabad, building for the web and exploring what comes next.">
     <meta property="og:image" content="images/main.png">
-    <title>Taha Amin | Web Developer</title>
-    <link rel="icon" type="image/png" href="images/favicon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="M Taha Amin — Web Developer &amp; AI Explorer">
+    <meta name="twitter:description" content="A student in Islamabad, building for the web and exploring what comes next.">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preload" as="image" href="images/main.png">
     <link rel="stylesheet" href="style.css">
-</head>
+    <title>M Taha Amin — Web Developer &amp; AI Explorer</title>
+    <script src="projects.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="cursor-orb" aria-hidden="true"></div>
 
-<body>
-    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
-
-    <nav class="site-nav" id="navbar" aria-label="Main navigation">
-        <div class="nav-container">
-            <a class="logo" href="#home" aria-label="Taha Amin home">Taha<span>.</span></a>
-            <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation"
-                aria-expanded="false" aria-controls="navLinks">
-                <i class="fa-solid fa-bars" aria-hidden="true"></i>
-            </button>
-            <div class="nav-links" id="navLinks">
-                <a href="#home" class="active">Home</a>
-                <a href="#about">About</a>
-                <a href="#services">Services</a>
-                <a href="#projects">Work</a>
-                <a class="nav-contact" href="#contact">Let's talk <i class="fa-solid fa-arrow-up-right-from-square"
-                        aria-hidden="true"></i></a>
-            </div>
+    <header class="site-header">
+      <nav class="nav-shell" aria-label="Main navigation">
+        <a class="wordmark" href="#home" aria-label="M Taha Amin, home">
+          <span class="monogram" aria-hidden="true">M<span>T</span>A</span>
+          <span class="wordmark-name">M Taha Amin</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">
+          <span class="menu-toggle-label">Menu</span>
+          <span class="menu-icon" aria-hidden="true"><i></i><i></i></span>
+        </button>
+        <div class="nav-links" id="site-navigation">
+          <a href="#about">About</a>
+          <a href="#education">Education</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Work</a>
+          <a href="#creative">Creative</a>
+          <a class="nav-contact" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
         </div>
-    </nav>
+      </nav>
+    </header>
 
-    <main>
-        <section class="hero section-shell" id="home">
-            <div class="hero-copy">
-                <p class="eyebrow"><span class="availability-dot"></span> Independent web developer · Pakistan</p>
-                <h1>Making the web<br><span>work for you.</span></h1>
-                <p class="hero-intro">I'm Taha, a web developer creating clear, responsive digital experiences for
-                    people and businesses.</p>
-                <div class="hero-actions">
-                    <a class="button button-dark" href="#projects">Explore my work <i
-                            class="fa-solid fa-arrow-down-long" aria-hidden="true"></i></a>
-                    <a class="text-link" href="CV.pdf" target="_blank" rel="noopener">View my CV <i
-                            class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
-                </div>
-                <div class="social-links" aria-label="Social profiles">
-                    <a href="https://github.com/tahaamindev" target="_blank" rel="noopener" aria-label="GitHub"><i
-                            class="fa-brands fa-github" aria-hidden="true"></i></a>
-                    <a href="https://www.instagram.com/tahaamindev/" target="_blank" rel="noopener"
-                        aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
-                    <a href="https://www.tiktok.com/@tahaamindev" target="_blank" rel="noopener"
-                        aria-label="TikTok"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
-                    <a href="https://www.facebook.com/tahaamindev" target="_blank" rel="noopener"
-                        aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
-                </div>
-            </div>
-            <div class="hero-portrait">
-                <img src="images/main.png" alt="Portrait of Taha Amin">
-                <div class="portrait-caption"><span>TAHA AMIN</span><span>WEB DEVELOPER</span></div>
-            </div>
-            <a class="scroll-note" href="#about"><span></span> Scroll to explore</a>
-        </section>
+    <main id="main">
+      <section class="hero section-wrap" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Student · Islamabad, Pakistan</p>
+          <h1 id="hero-title">I build what<br><span class="metal-text">I’m curious about.</span></h1>
+          <p class="hero-intro">I’m Taha — a web developer, AI explorer and visual creator, learning by making things that feel a little more considered.</p>
+          <div class="hero-actions">
+            <a class="button button-light" href="#projects">Explore my work <span aria-hidden="true">↘</span></a>
+            <a class="text-link" href="#about">A little about me <span aria-hidden="true">↗</span></a>
+          </div>
+          <p class="hero-note">Curious by nature. Building as I go.</p>
+        </div>
+        <div class="hero-portrait">
+          <div class="portrait-frame">
+            <img src="images/main.png" alt="Portrait of M Taha Amin at his laptop" width="1254" height="1254" fetchpriority="high">
+            <span class="portrait-index" aria-hidden="true">01 / A WORK IN PROGRESS</span>
+          </div>
+          <span class="portrait-orbit portrait-orbit-one" aria-hidden="true"></span>
+          <span class="portrait-orbit portrait-orbit-two" aria-hidden="true"></span>
+          <div class="hero-card" aria-label="My current mix: web, AI and visual ideas">
+            <span class="hero-card-label">MY CURRENT MIX</span>
+            <span class="hero-card-title">Web <i>×</i> AI <i>×</i> Visuals</span>
+            <span class="hero-card-mark" aria-hidden="true">↗</span>
+          </div>
+          <span class="hero-side-note" aria-hidden="true">CODE / CURIOSITY / CREATIVITY</span>
+        </div>
+        <a class="scroll-cue" href="#about"><span aria-hidden="true"></span> Scroll to explore</a>
+      </section>
 
-        <section class="craft-strip" aria-label="How I work">
-            <div class="craft-track">
-                <div class="craft-phrases">
-                    <span>Thoughtful design</span><i aria-hidden="true"></i>
-                    <span>Front-end development</span><i aria-hidden="true"></i>
-                    <span>Responsive by default</span><i aria-hidden="true"></i>
-                    <span>Made to feel effortless</span><i aria-hidden="true"></i>
-                </div>
-                <div class="craft-phrases" aria-hidden="true">
-                    <span>Thoughtful design</span><i></i>
-                    <span>Front-end development</span><i></i>
-                    <span>Responsive by default</span><i></i>
-                    <span>Made to feel effortless</span><i></i>
-                </div>
-            </div>
-        </section>
+      <section class="section section-wrap about-section" id="about" aria-labelledby="about-title">
+        <div class="section-heading">
+          <p class="eyebrow">01 — A little context</p>
+          <h2 id="about-title">Still curious.<br><span class="muted">Always becoming.</span></h2>
+        </div>
+        <div class="about-copy">
+          <p class="lead-copy">My interest in computers started around Grade 8. By Grade 9, I had made my first webpage — a small beginning that opened up a much bigger world.</p>
+          <p>Through Grades 9 and 10, I kept building pages, websites and web apps while learning HTML, CSS and JavaScript. Now, alongside my studies, I’m exploring AI tools and agents and finding new ways to bring ideas to life.</p>
+          <p>I’m drawn to the mix of logic and imagination: a well-made interface, a sketch taking shape, or a science project that makes you ask one more question.</p>
+          <div class="about-traits" aria-label="A few words that describe me">
+            <span>Curious</span><span>Ambitious</span><span>Creative</span>
+          </div>
+        </div>
+      </section>
 
-        <section class="about section-shell section-pad" id="about">
-            <div class="section-heading">
-                <p class="eyebrow">A little about me</p>
-                <h2>Designed with care.<br><span>Built around people.</span></h2>
+      <section class="section education-section" id="education" aria-labelledby="education-title">
+        <div class="section-wrap">
+          <div class="section-heading section-heading-row">
+            <div>
+              <p class="eyebrow">02 — The learning path</p>
+              <h2 id="education-title">Grounded in learning.</h2>
             </div>
-            <div class="about-layout">
-                <div class="about-photo">
-                    <img src="images/about.png" alt="Taha Amin at work">
-                </div>
-                <div class="about-copy">
-                    <p class="lead">I turn ideas into useful, approachable websites.</p>
-                    <p>I'm a dedicated web developer with a focus on clean front-end development and responsive design.
-                        I enjoy getting to know the problem first, then building a straightforward solution that feels
-                        considered on every screen.</p>
-                    <p>My current toolkit includes HTML, CSS, JavaScript and Tailwind CSS. I'm continuing to grow my
-                        skills in full-stack development while making practical projects along the way.</p>
-                    <div class="skill-list" aria-label="Core skills">
-                        <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Tailwind CSS</span>
-                        <span>Git &amp; GitHub</span><span>Responsive design</span>
-                    </div>
-                </div>
-            </div>
-        </section>
+            <p class="section-aside">An ongoing education, with a direction I’m working toward.</p>
+          </div>
+          <ol class="education-timeline">
+            <li class="education-item">
+              <span class="timeline-marker" aria-hidden="true"></span>
+              <div class="education-meta"><span>Through Grade 8</span><span>Islamabad</span></div>
+              <h3>United City School System</h3>
+              <p>D-13, Islamabad</p>
+              <span class="education-state">Completed stage</span>
+            </li>
+            <li class="education-item">
+              <span class="timeline-marker" aria-hidden="true"></span>
+              <div class="education-meta"><span>Matriculation</span><span>FBISE</span></div>
+              <h3>IMCB G-9/4</h3>
+              <p>975 / 1100 marks</p>
+              <span class="education-state">Completed</span>
+            </li>
+            <li class="education-item is-current">
+              <span class="timeline-marker" aria-hidden="true"></span>
+              <div class="education-meta"><span>First year · ICS</span><span>FBISE</span></div>
+              <h3>KIPS College</h3>
+              <p>G-9, Islamabad</p>
+              <span class="education-state">Currently studying</span>
+            </li>
+            <li class="education-item is-future">
+              <span class="timeline-marker" aria-hidden="true"></span>
+              <div class="education-meta"><span>A future goal</span><span>In progress</span></div>
+              <h3>BS Software Engineering</h3>
+              <p>FAST University</p>
+              <span class="education-state">What I’m aiming for</span>
+            </li>
+          </ol>
+        </div>
+      </section>
 
-        <section class="services section-pad" id="services">
-            <div class="section-shell">
-                <div class="section-heading section-heading-row">
-                    <div>
-                        <p class="eyebrow">How I can help</p>
-                        <h2>From first idea to <span>finished website.</span></h2>
-                    </div>
-                    <p class="section-aside">From first sketch to final detail, I build websites with care, clarity and
-                        real people in mind.</p>
-                </div>
-                <div class="service-list">
-                    <article class="service-item">
-                        <span class="service-number">01</span>
-                        <div>
-                            <h3>Web development</h3>
-                            <p>Fast, accessible websites built around your goals and content.</p>
-                        </div>
-                        <i class="fa-solid fa-code" aria-hidden="true"></i>
-                    </article>
-                    <article class="service-item">
-                        <span class="service-number">02</span>
-                        <div>
-                            <h3>Responsive design</h3>
-                            <p>Carefully adapted layouts that work across phones, tablets and desktops.</p>
-                        </div>
-                        <i class="fa-solid fa-mobile-screen" aria-hidden="true"></i>
-                    </article>
-                    <article class="service-item">
-                        <span class="service-number">03</span>
-                        <div>
-                            <h3>Interface design</h3>
-                            <p>Clear, approachable interfaces that make everyday tasks feel simple.</p>
-                        </div>
-                        <i class="fa-solid fa-pen-ruler" aria-hidden="true"></i>
-                    </article>
-                    <article class="service-item">
-                        <span class="service-number">04</span>
-                        <div>
-                            <h3>Website refinement</h3>
-                            <p>Thoughtful improvements to usability, loading speed and presentation.</p>
-                        </div>
-                        <i class="fa-solid fa-sliders" aria-hidden="true"></i>
-                    </article>
-                </div>
-            </div>
-        </section>
+      <section class="section section-wrap skills-section" id="skills" aria-labelledby="skills-title">
+        <div class="section-heading section-heading-row">
+          <div>
+            <p class="eyebrow">03 — What I’m working with</p>
+            <h2 id="skills-title">Learning by doing.</h2>
+          </div>
+          <p class="section-aside">No scores, just an honest snapshot of where my curiosity is.</p>
+        </div>
+        <div class="skills-layout">
+          <div class="skill-list" aria-label="Development skills and current learning">
+            <div class="skill-row"><span class="skill-number">01</span><span class="skill-name">HTML &amp; CSS</span><span class="skill-state">Building</span></div>
+            <div class="skill-row"><span class="skill-number">02</span><span class="skill-name">JavaScript</span><span class="skill-state">Practicing</span></div>
+            <div class="skill-row"><span class="skill-number">03</span><span class="skill-name">Responsive layouts</span><span class="skill-state">Building</span></div>
+            <div class="skill-row"><span class="skill-number">04</span><span class="skill-name">UI &amp; distinctive web design</span><span class="skill-state">Exploring</span></div>
+            <div class="skill-row"><span class="skill-number">05</span><span class="skill-name">Web animations</span><span class="skill-state">Practicing</span></div>
+            <div class="skill-row"><span class="skill-number">06</span><span class="skill-name">AI tools &amp; agents</span><span class="skill-state">Exploring</span></div>
+          </div>
+          <aside class="tool-card" aria-labelledby="tools-title">
+            <p class="eyebrow">An evolving toolkit</p>
+            <h3 id="tools-title">Tools I use<br>and explore.</h3>
+            <p>Part of my learning process — not partnerships or endorsements.</p>
+            <ul class="tool-list">
+              <li>Claude</li><li>GitHub Copilot</li><li>ChatGPT</li><li>Qwen</li><li>Gemini</li><li>Manus</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
 
-        <section class="projects section-shell section-pad" id="projects">
-            <div class="section-heading section-heading-row">
-                <div>
-                    <p class="eyebrow">Selected projects</p>
-                    <h2>Work that speaks <span>for itself.</span></h2>
-                </div>
-                <a class="text-link" href="https://github.com/tahaamindev" target="_blank" rel="noopener">More on GitHub
-                    <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+      <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+        <div class="section-wrap">
+          <div class="section-heading section-heading-row">
+            <div>
+              <p class="eyebrow">04 — Selected projects</p>
+              <h2 id="projects-title">Made to be explored.</h2>
             </div>
-            <div class="projects-grid">
-                <article class="project-card project-featured">
-                    <a class="project-image" href="https://tahaamindev.github.io/T-Attendie/" target="_blank"
-                        rel="noopener" aria-label="View Attendance WebApp">
-                        <img src="images/T-Attendie.gif" alt="Attendance WebApp project preview" loading="lazy">
-                        <span class="project-open"><i class="fa-solid fa-arrow-up-right-from-square"
-                                aria-hidden="true"></i></span>
-                    </a>
-                    <div class="project-meta"><span>Web application</span><span>01</span></div>
-                    <h3>Attendance WebApp</h3>
-                    <p>A university attendance system that uses QR codes for quick, practical attendance management.</p>
-                    <div class="project-footer">
-                        <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-                        <div class="project-actions">
-                            <a href="https://tahaamindev.github.io/T-Attendie/" target="_blank" rel="noopener">Live
-                                site <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
-                            <a href="https://github.com/tahaamindev/T-Attendie" target="_blank"
-                                rel="noopener">Source <i class="fa-brands fa-github" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </article>
-                <article class="project-card">
-                    <a class="project-image" href="https://tahaamindev.github.io/JK-Collection/" target="_blank"
-                        rel="noopener" aria-label="View JK-Collection">
-                        <img src="images/JK-Collection.gif" alt="JK-Collection project preview" loading="lazy">
-                        <span class="project-open"><i class="fa-solid fa-arrow-up-right-from-square"
-                                aria-hidden="true"></i></span>
-                    </a>
-                    <div class="project-meta"><span>E-commerce website</span><span>02</span></div>
-                    <h3>JK-Collection</h3>
-                    <p>A responsive online store with product displays, considered motion and WhatsApp ordering.</p>
-                    <div class="project-footer">
-                        <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-                        <div class="project-actions">
-                            <a href="https://tahaamindev.github.io/JK-Collection/" target="_blank" rel="noopener">Live
-                                site <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
-                            <a href="https://github.com/tahaamindev/JK-Collection" target="_blank"
-                                rel="noopener">Source <i class="fa-brands fa-github" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </article>
-                <article class="project-card">
-                    <a class="project-image" href="https://tahaamindev.github.io/AIMZ/" target="_blank" rel="noopener"
-                        aria-label="View AIMZ Hub">
-                        <img src="images/AIMZ.gif" alt="AIMZ Hub project preview" loading="lazy">
-                        <span class="project-open"><i class="fa-solid fa-arrow-up-right-from-square"
-                                aria-hidden="true"></i></span>
-                    </a>
-                    <div class="project-meta"><span>E-commerce website</span><span>03</span></div>
-                    <h3>AIMZ Hub</h3>
-                    <p>A dark-and-gold storefront built to present products through a distinctive visual identity.</p>
-                    <div class="project-footer">
-                        <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-                        <div class="project-actions">
-                            <a href="https://tahaamindev.github.io/AIMZ/" target="_blank" rel="noopener">Live site <i
-                                    class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
-                            <a href="https://github.com/tahaamindev/AIMZ" target="_blank" rel="noopener">Source <i
-                                    class="fa-brands fa-github" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </section>
+            <p class="section-aside">A few things I’ve built while learning to make ideas work on screen.</p>
+          </div>
+          <div class="project-grid" id="project-grid" aria-live="polite"></div>
+          <p class="project-footnote">More experiments and ongoing work live on <a href="https://github.com/tahaamindev" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>.</p>
+        </div>
+      </section>
 
-        <section class="contact section-pad" id="contact">
-            <div class="section-shell contact-layout">
-                <div class="contact-copy">
-                    <p class="eyebrow">Have something in mind?</p>
-                    <h2>Let's make<br><span>it happen.</span></h2>
-                    <p>Have a project, a question or just want to say hello? Send a note and I'll get back to you.</p>
-                    <a class="contact-email" href="mailto:Taha.dev@email.com">Taha.dev@email.com <i
-                            class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
-                    <div class="social-links contact-social" aria-label="Social profiles">
-                        <a href="https://github.com/tahaamindev" target="_blank" rel="noopener" aria-label="GitHub"><i
-                                class="fa-brands fa-github" aria-hidden="true"></i></a>
-                        <a href="https://www.instagram.com/tahaamindev/" target="_blank" rel="noopener"
-                            aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
-                        <a href="https://www.tiktok.com/@tahaamindev" target="_blank" rel="noopener"
-                            aria-label="TikTok"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
-                        <a href="https://www.facebook.com/tahaamindev" target="_blank" rel="noopener"
-                            aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-                <form class="contact-form" id="contact-form">
-                    <div class="form-row">
-                        <label for="name">Your name<input type="text" id="name" name="name" placeholder="Name"
-                                autocomplete="name" required></label>
-                        <label for="email">Your email<input type="email" id="email" name="email"
-                                placeholder="you@example.com" autocomplete="email" required></label>
-                    </div>
-                    <label for="subject">Subject<input type="text" id="subject" name="subject"
-                            placeholder="What would you like to work on?"></label>
-                    <label for="message">Your message<textarea id="message" name="message" rows="5"
-                            placeholder="Tell me a little about your project..." required></textarea></label>
-                    <button class="button button-light" type="submit">Send message <i
-                            class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
-                </form>
-            </div>
-        </section>
+      <section class="section section-wrap creative-section" id="creative" aria-labelledby="creative-title">
+        <div class="section-heading section-heading-row">
+          <div>
+            <p class="eyebrow">05 — Beyond the browser</p>
+            <h2 id="creative-title">A space for making.</h2>
+          </div>
+          <p class="section-aside">Web experiments, visual ideas and whatever I’m curious about next.</p>
+        </div>
+        <div class="gallery-grid" id="gallery-grid" aria-label="Creative work gallery"></div>
+        <p class="gallery-note">The current workspace includes a visual interface study. Sketches and science-project photographs haven’t been added yet.</p>
+      </section>
+
+      <section class="travel-section" aria-labelledby="travel-title">
+        <div class="section-wrap travel-inner">
+          <p class="eyebrow">06 — Away from the screen</p>
+          <div class="travel-copy">
+            <h2 id="travel-title">A little distance<br>makes room for <span class="metal-text">wonder.</span></h2>
+            <p>I enjoy travelling and discovering new places. No itinerary here — just an interest in seeing more of the world.</p>
+          </div>
+          <span class="travel-mark" aria-hidden="true">↗</span>
+        </div>
+      </section>
+
+      <section class="section section-wrap contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="contact-intro">
+          <p class="eyebrow">07 — Find me out there</p>
+          <h2 id="contact-title">Good things start<br>with a <span class="metal-text">hello.</span></h2>
+          <p>I’m always happy to connect, share what I’m learning or talk about a new idea.</p>
+        </div>
+        <div class="social-grid" aria-label="Social profiles">
+          <a href="https://github.com/tahaamindev" target="_blank" rel="noopener noreferrer"><span>GH</span><span>GitHub</span><b aria-hidden="true">↗</b></a>
+          <a href="https://www.instagram.com/m.tahaamin" target="_blank" rel="noopener noreferrer"><span>IG</span><span>Instagram</span><b aria-hidden="true">↗</b></a>
+          <a href="https://www.tiktok.com/@tahaamin504/" target="_blank" rel="noopener noreferrer"><span>TK</span><span>TikTok</span><b aria-hidden="true">↗</b></a>
+          <a href="https://www.linkedin.com/in/taha-amin-undefined-9a4148438/" target="_blank" rel="noopener noreferrer"><span>IN</span><span>LinkedIn</span><b aria-hidden="true">↗</b></a>
+          <a href="https://www.facebook.com/people/M-Taha-Amin/61593492703992/" target="_blank" rel="noopener noreferrer"><span>FB</span><span>Facebook</span><b aria-hidden="true">↗</b></a>
+          <a href="https://wa.me/923139427015" target="_blank" rel="noopener noreferrer"><span>WA</span><span>WhatsApp</span><b aria-hidden="true">↗</b></a>
+        </div>
+      </section>
     </main>
 
-    <footer class="site-footer">
-        <div class="section-shell footer-content">
-            <a class="logo" href="#home">Taha<span>.</span></a>
-            <p>© <span id="currentYear">2026</span> Taha Amin. Made with care.</p>
-            <a href="#home">Back to top <i class="fa-solid fa-arrow-up" aria-hidden="true"></i></a>
-        </div>
+    <footer class="site-footer section-wrap">
+      <a class="wordmark footer-wordmark" href="#home" aria-label="Back to top">
+        <span class="monogram" aria-hidden="true">M<span>T</span>A</span>
+        <span class="wordmark-name">M Taha Amin</span>
+      </a>
+      <p>Built with curiosity in Islamabad.</p>
+      <a class="back-to-top" href="#home">Back to top <span aria-hidden="true">↑</span></a>
+      <span class="copyright">© <span id="current-year"></span> M Taha Amin</span>
     </footer>
 
-    <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+    <dialog class="project-dialog" id="project-dialog" aria-labelledby="project-dialog-title">
+      <div class="dialog-shell">
+        <button class="dialog-close" type="button" aria-label="Close project details">×</button>
+        <div class="dialog-image-wrap"><img class="dialog-image" alt="" width="1365" height="767"></div>
+        <div class="dialog-content">
+          <p class="eyebrow dialog-kicker"></p>
+          <h2 id="project-dialog-title"></h2>
+          <p class="dialog-description"></p>
+          <ul class="dialog-tags" aria-label="Technologies"></ul>
+          <div class="dialog-actions">
+            <a class="button button-light dialog-source" target="_blank" rel="noopener noreferrer">View source <span aria-hidden="true">↗</span></a>
+            <a class="button button-outline dialog-preview" target="_blank" rel="noopener noreferrer">Live preview <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </dialog>
 
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script>
-        emailjs.init({ publicKey: "jrH_unsBhjLSrJaY" });
-    </script>
-    <script src="script.js"></script>
-</body>
-
+    <dialog class="lightbox-dialog" id="lightbox-dialog" aria-label="Creative work image viewer">
+      <div class="lightbox-shell">
+        <button class="lightbox-close" type="button" aria-label="Close image viewer">×</button>
+        <button class="lightbox-nav lightbox-previous" type="button" aria-label="Previous image">←</button>
+        <figure>
+          <img class="lightbox-image" alt="">
+          <figcaption class="lightbox-caption"></figcaption>
+        </figure>
+        <button class="lightbox-nav lightbox-next" type="button" aria-label="Next image">→</button>
+      </div>
+    </dialog>
+  </body>
 </html>

@@ -1,0 +1,936 @@
+
+M TAHA AMIN — COMPLETE PORTFOLIO SPECIFICATION
+FOR GITHUB COPILOT AGENT
+============================================================
+
+ROLE:
+Act as a senior front-end developer, UI/UX designer, animation specialist,
+accessibility engineer, and QA tester.
+
+Your job is to BUILD the complete portfolio website in the CURRENT WORKSPACE.
+Do not only provide advice, snippets, or a design plan. Create the actual files,
+write the complete code, test the implementation, and document the result.
+
+Do not ask me additional questions. Use sensible professional defaults wherever
+information is missing.
+
+============================================================
+1. FIRST: INSPECT THE CURRENT FOLDER
+============================================================
+
+Before coding:
+
+1. Inspect the current workspace and all existing files.
+2. Inspect all folders, particularly the assets folder and its subfolders.
+3. Identify existing HTML, CSS, JavaScript, README, images, screenshots, artwork,
+   CV PDFs, configuration files, and any existing website.
+4. Reuse relevant existing assets and code.
+5. Preserve existing files and functionality wherever possible.
+6. Do not indiscriminately delete, rename, or overwrite files.
+7. Do not assume filenames before inspecting the actual folder.
+8. If files need major changes, understand them first and preserve useful work.
+9. After inspection, implement the complete website without waiting for approval.
+
+The assets folder will contain, or is intended to contain:
+- My monochrome portrait.
+- Project screenshots.
+- Sketch photographs.
+- AI artwork and images.
+- My CV PDF.
+
+If some assets are missing, handle them gracefully. Do not fabricate images,
+achievements, projects, or personal information.
+
+============================================================
+2. TECHNOLOGY REQUIREMENTS
+============================================================
+
+Use:
+- HTML5
+- CSS3
+- Vanilla JavaScript
+
+Do NOT use React, Vue, Angular, or a heavy framework.
+Avoid unnecessary libraries and build tools.
+
+The website must be a static website compatible with GitHub Pages.
+
+Keep HTML, CSS, and JavaScript organized into separate files where appropriate.
+Write readable, maintainable, production-quality code.
+
+Every button and interactive element must work.
+No dead buttons, empty links, fake demos, or nonfunctional controls.
+
+============================================================
+3. WEBSITE IDENTITY
+============================================================
+
+Name:
+M Taha Amin
+
+Professional identity:
+Student + Web Developer + AI Explorer + Visual Creator.
+
+Current level:
+Intermediate.
+
+Personality:
+- Curious
+- Ambitious
+- Creative
+
+Create an original, memorable, concise English headline and tagline yourself.
+The wording must feel natural, premium, personal, and human-written.
+
+Avoid generic AI-sounding marketing language, exaggerated claims, and empty slogans.
+
+The website should represent my complete public-facing identity:
+my education, coding journey, projects, AI experiments, creative work, interests,
+and contact links.
+
+============================================================
+4. VISUAL DESIGN — APPLE-INSPIRED, NOT A CLONE
+============================================================
+
+Design an original portfolio inspired by Apple's minimalism, typography,
+materials, refined motion, and polished user experience.
+
+Reference inspiration:
+https://dribbble.com/shots/26995447-Personal-Portfolio-Website-Animations
+
+Use this only as general inspiration. Do not copy the exact design or assets.
+
+COLOR PALETTE:
+- Deep black.
+- Near-black.
+- Matte charcoal.
+- White.
+- Soft gray.
+- Polished silver.
+- Subtle chrome and metallic gradients.
+
+STRICTLY AVOID:
+- Purple gradients.
+- Blue AI gradients.
+- Neon purple or blue glows.
+- Generic AI portfolio aesthetics.
+- Random glowing blobs.
+- Excessive glass effects.
+- Unnecessary decorative elements.
+- Cluttered layouts.
+
+The result must look premium, original, clean, and professionally art-directed.
+
+TYPOGRAPHY:
+Use a clean, Apple-inspired system sans-serif stack, such as:
+
+-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif
+
+Do not use or redistribute proprietary Apple font files without permission.
+
+Use:
+- Large editorial headlines.
+- Refined body typography.
+- Excellent spacing.
+- Responsive font sizes.
+- Clear hierarchy.
+- Readable contrast.
+
+Create a consistent design system using CSS custom properties for colors,
+spacing, radii, shadows, transitions, and content widths.
+
+============================================================
+5. LOGO AND FAVICON
+============================================================
+
+Create an original metallic MTA monogram and a wordmark for M Taha Amin.
+
+Requirements:
+- Minimal.
+- Elegant.
+- Readable at small sizes.
+- Consistent with the black-and-silver theme.
+- Suitable for the navigation bar and favicon.
+
+Create a lightweight favicon, preferably SVG.
+
+Do not use a generic AI-generated logo or an unrelated stock icon.
+
+============================================================
+6. PERSONAL INFORMATION
+============================================================
+
+Use these facts accurately.
+
+NAME:
+M Taha Amin
+
+EDUCATION:
+
+1. Primary education through Grade 8:
+   United City School System
+   D-13, Islamabad.
+
+2. Matriculation:
+   IMCB G-9/4.
+   FBISE.
+   Marks: 975/1100.
+
+3. Current education:
+   First-year ICS.
+   KIPS College, G-9, Islamabad.
+   FBISE.
+
+4. Future goal:
+   Pursue a BS in Software Engineering at FAST University.
+
+IMPORTANT:
+FAST University is my future goal, not a completed degree or current qualification.
+
+Do not invent education years, dates, degrees, certificates, or academic results.
+An undated timeline is preferable to fabricated dates.
+
+MY STORY:
+
+My interest in computers and technology began around Grade 8.
+
+In Grade 9, I built my first webpage. During Grades 9 and 10, I continued
+improving my skills, learned HTML, CSS, and JavaScript, and built multiple
+webpages, websites, and web applications.
+
+During first year, I expanded my interest into AI tools and AI agents.
+I continue learning, experimenting, and improving.
+
+Write this story in natural, concise, professional English.
+
+Do not invent clients, employment, awards, dates, or achievements.
+
+============================================================
+7. SKILLS AND AI TOOLS
+============================================================
+
+WEB DEVELOPMENT:
+- HTML.
+- CSS.
+- JavaScript.
+- Responsive layouts.
+- UI design.
+- Web animations.
+- Distinctive web design.
+
+AI AND CREATIVE WORK:
+- AI tools and agents.
+- AI art.
+- AI image creation.
+- Cinematic visual experiments.
+- Realistic visual experiments.
+
+AI TOOLS I USE:
+- Claude.
+- GitHub Copilot.
+- ChatGPT.
+- Qwen.
+- Gemini.
+- Manus.
+
+Present these as tools I use and explore, not as partnerships or endorsements.
+
+SKILL PROGRESS:
+
+Include a polished skills and current-learning section.
+
+Use honest qualitative states such as:
+- Building.
+- Practicing.
+- Exploring.
+- Currently learning.
+
+Do not invent percentages, numeric proficiency scores, expert ratings, or
+unverified skill claims.
+
+The progress display should look premium without misleading visitors.
+
+============================================================
+8. PROJECTS AND GITHUB INTEGRATION
+============================================================
+
+My GitHub profile:
+https://github.com/tahaamindev
+
+I have built approximately 20 projects, with around two currently in progress.
+
+Inspect the public GitHub profile and repositories whenever network access allows.
+
+Read available:
+- Repository names.
+- README files.
+- Descriptions.
+- Code.
+- Screenshots.
+- Technologies.
+- Existing demo links.
+- GitHub Pages links.
+
+Select the strongest three to five projects based on actual evidence.
+
+For each project, record:
+- Real project name.
+- Factual description.
+- Verified technologies.
+- Actual screenshots, if available.
+- Source repository URL.
+- Verified live preview URL, if available.
+- Status only if it can be established.
+
+Do not invent projects, features, statistics, repository URLs, or achievements.
+
+LIVE PREVIEWS:
+
+Inspect repositories for live demos and verify them where possible.
+
+A GitHub repository is not automatically a live preview.
+
+If a real working demo exists:
+Show a Live Preview button.
+
+If no verified demo exists:
+Hide the button or clearly mark the preview as unavailable.
+
+Never guess GitHub Pages URLs.
+
+If GitHub cannot be accessed, use the files available in the workspace and clearly
+report which remote information could not be verified.
+
+PROJECT CARDS:
+
+Use premium Apple-inspired cards with:
+- Large screenshots.
+- Project title.
+- Concise factual description.
+- Relevant technology labels.
+- Subtle hover and focus states.
+
+PROJECT MODAL:
+
+When a project is clicked, open a polished modal containing:
+- Large project screenshot.
+- Project name.
+- Description.
+- Technologies.
+- Source Code button.
+- Live Preview button only when a verified demo exists.
+- Accessible close button.
+
+The modal must:
+- Close using Escape.
+- Close when clicking outside where appropriate.
+- Manage keyboard focus properly.
+- Return focus to the triggering project card.
+- Work on mobile.
+- Prevent background interaction when appropriate.
+- Never show fake links.
+
+Keep project data in a separate JavaScript data file or a clearly organized
+data structure so projects can be added easily.
+
+Do not fabricate the exact number of repositories or display fake star counts,
+client logos, testimonials, or usage statistics.
+
+============================================================
+9. REQUIRED HOMEPAGE SECTIONS
+============================================================
+
+Build a long-scrolling homepage with these sections:
+
+1. Hero.
+2. About.
+3. Education.
+4. Skills and current learning.
+5. Projects.
+6. Combined creative gallery.
+7. Travel interest.
+8. Contact and social links.
+9. Footer.
+
+Provide separate project or gallery pages/views where useful.
+
+Keep the homepage focused and polished.
+
+Do not create a blog or learning journal.
+
+============================================================
+10. HERO SECTION
+============================================================
+
+Create a striking Apple-inspired hero.
+
+Combine:
+- Large editorial typography.
+- My real monochrome portrait.
+- Subtle polished animation.
+- Generous negative space.
+- Black and silver styling.
+- A unique, human-sounding headline.
+- A short tagline.
+
+Possible identity description:
+Student, Web Developer, AI Explorer, Visual Creator.
+
+Primary button:
+Explore My Work.
+
+It should smoothly scroll to the Projects section.
+
+Secondary button:
+About Me, or Download CV only if a real PDF exists.
+
+Use meaningful alt text for my portrait.
+
+Do not use generic AI artwork instead of my actual portrait.
+
+Do not add fake statistics or exaggerated claims.
+
+============================================================
+11. ABOUT SECTION
+============================================================
+
+Create a concise personal story using the facts provided above.
+
+Highlight:
+- My early interest in computers.
+- My first webpage in Grade 9.
+- My growth in HTML, CSS, and JavaScript.
+- My current exploration of AI tools.
+- My curiosity, ambition, and creativity.
+- My interest in sketching and science projects.
+
+The writing should feel authentic and personal, not corporate or AI-generated.
+
+============================================================
+12. EDUCATION TIMELINE
+============================================================
+
+Display the following education timeline:
+
+United City School System:
+Education through Grade 8.
+D-13, Islamabad.
+
+IMCB G-9/4:
+Matriculation, FBISE.
+975/1100 marks.
+
+KIPS College:
+Currently studying first-year ICS.
+G-9, Islamabad.
+FBISE.
+
+Future goal:
+BS Software Engineering at FAST University.
+
+Make the current and future states visually distinct.
+
+Do not invent years or dates.
+
+Do not present the future university goal as an achievement.
+
+============================================================
+13. CREATIVE GALLERY
+============================================================
+
+Create one combined visual gallery containing:
+
+- AI artwork.
+- Sketches.
+- Science projects.
+
+Use a premium mixed-size image layout consistent with the monochrome design.
+
+Use actual image files from the assets folder.
+
+Each image may include:
+- Image.
+- Category.
+- Short factual caption, when known.
+
+Do not invent artwork titles, project descriptions, or dates.
+
+When an image is clicked, open an elegant lightbox with:
+- Large image.
+- Close control.
+- Previous and next navigation when multiple images exist.
+- Keyboard support.
+- Mobile-friendly controls.
+- Captions where available.
+
+Lazy-load images below the fold.
+
+Use correct image paths, aspect ratios, and meaningful alt text.
+
+If an image is missing, handle it gracefully.
+
+Do not add a video gallery. I do not want videos displayed at this stage.
+
+============================================================
+14. TRAVEL INTEREST
+============================================================
+
+Create a small, refined section showing that I enjoy travelling and exploring places.
+
+This is an interest only.
+
+Do not invent travel destinations, completed trips, or travel experiences.
+
+Use typography or a real supplied image if suitable.
+
+Keep this section visually consistent with the portfolio.
+
+============================================================
+15. FLOATING LIQUID-GLASS NAVBAR
+============================================================
+
+Create an Apple-inspired floating liquid-glass navbar.
+
+DESKTOP:
+- My name or MTA logo on the left.
+- Navigation buttons on the right.
+- Floating translucent glass appearance.
+- Subtle border and blur.
+- Premium hover effects.
+
+The navbar must remain visible while scrolling.
+
+MOBILE:
+- Compact glass navbar.
+- Accessible menu button.
+- Easy-to-tap navigation.
+- Navbar remains visible.
+- Menu opens and closes correctly.
+
+Navigation should link to the correct sections.
+
+Use smooth scrolling and ensure sections are not hidden behind the navbar.
+
+Maintain text contrast even when the glass effect is active.
+
+============================================================
+16. APPLE-INSPIRED ANIMATIONS
+============================================================
+
+Use refined animations throughout the site:
+
+- Smooth scrolling.
+- Subtle section reveals.
+- Elegant hover effects.
+- Polished modal transitions.
+- Gentle image transitions.
+- Refined button interactions.
+- Minimal intro animation.
+- Smooth gallery interactions.
+
+Animations should be premium, purposeful, and never distracting.
+
+Do not animate every element unnecessarily.
+
+Avoid expensive scroll effects and continuous heavy animations.
+
+Respect the operating system's prefers-reduced-motion setting.
+
+The website must remain usable when animations are disabled.
+
+Do not show a long loading screen.
+
+The site should display content quickly.
+
+============================================================
+17. CUSTOM MACOS-INSPIRED CURSOR
+============================================================
+
+Create a tasteful macOS-inspired custom cursor for desktop devices only.
+
+Requirements:
+- Smooth, responsive movement.
+- Subtle appearance consistent with black and silver.
+- Appropriate pointer feedback over clickable elements.
+- Must not obscure text or important controls.
+- Must not create performance problems.
+
+On touch devices, use the normal touch interaction and do not display the
+desktop custom cursor.
+
+Disable or reduce cursor animation when reduced motion is requested.
+
+The website must remain completely usable if the custom cursor fails.
+
+============================================================
+18. CONTACT AND SOCIAL LINKS
+============================================================
+
+There must be NO contact form and NO submit button.
+
+Create an Apple-style contact section containing elegant social buttons.
+
+Use these exact links:
+
+Instagram:
+https://www.instagram.com/m.tahaamin
+
+TikTok:
+https://www.tiktok.com/@tahaamin504/
+
+GitHub:
+https://github.com/tahaamindev
+
+LinkedIn:
+https://www.linkedin.com/in/taha-amin-undefined-9a4148438/
+
+Facebook:
+https://www.facebook.com/people/M-Taha-Amin/61593492703992/
+
+WhatsApp number:
+03139427015
+
+For WhatsApp, use the international Pakistan number in the URL:
+https://wa.me/923139427015
+
+The WhatsApp number is intended to be public, as requested.
+
+Requirements:
+- Elegant icons and platform labels.
+- Accessible names for every link.
+- Hover, active, and keyboard-focus states.
+- Safe external-link behavior.
+- No invented email address.
+- No broken social links.
+- No contact form.
+
+Avoid adding a large icon library just for a few icons. Lightweight SVG icons
+or suitable local assets are acceptable.
+
+============================================================
+19. CV DOWNLOAD
+============================================================
+
+Inspect the assets folder and its subfolders for my actual CV PDF.
+
+If found:
+- Add a working Download CV button.
+- Link to the real PDF.
+- Ensure the relative path works on GitHub Pages.
+
+If not found:
+- Do not create a fake CV.
+- Do not create a broken download link.
+- Omit the button until the PDF is available, or clearly disable it.
+- Document the expected location in README.
+
+Do not invent qualifications, work history, certificates, or dates.
+
+============================================================
+20. RESPONSIVE DESIGN
+============================================================
+
+The website must be optimized for:
+
+- Small mobile phones.
+- Large mobile phones.
+- Tablets.
+- Laptops.
+- Wide desktop screens.
+
+Desktop and mobile should both feel intentionally designed.
+
+On mobile:
+- Adjust typography and spacing.
+- Adapt the navbar.
+- Make cards and galleries touch-friendly.
+- Make modals fit the viewport.
+- Prevent horizontal overflow.
+- Ensure buttons are comfortably tappable.
+- Keep navigation usable.
+
+Test at multiple viewport widths.
+
+Do not merely shrink the desktop design.
+
+============================================================
+21. ACCESSIBILITY
+============================================================
+
+Implement:
+
+- Semantic HTML.
+- Correct heading hierarchy.
+- Keyboard-accessible navigation.
+- Visible focus states.
+- Accessible buttons and links.
+- Useful image alt text.
+- Readable contrast.
+- Keyboard-accessible modals and lightboxes.
+- Escape-key close behavior.
+- Sensible focus management.
+- Reduced-motion support.
+- Touch-device compatibility.
+
+Do not rely on color alone to convey information.
+
+The custom cursor must never be required to use the site.
+
+============================================================
+22. PERFORMANCE
+============================================================
+
+Prioritize fast loading.
+
+Implement:
+- Lightweight HTML, CSS, and JavaScript.
+- Optimized image loading.
+- Lazy loading for gallery images.
+- Width/height or aspect-ratio to reduce layout shifts.
+- Efficient CSS transitions.
+- Minimal dependencies.
+- No unnecessary libraries.
+- No autoplay videos.
+- No heavy, unnecessary visual effects.
+- No expensive continuous scroll handlers.
+- No unnecessary external requests.
+
+Load the hero image appropriately so it does not unnecessarily delay the page.
+
+Do not destroy original user assets while optimizing them.
+
+============================================================
+23. SEO AND SOCIAL SHARING
+============================================================
+
+Implement:
+- Accurate HTML title.
+- Meta description.
+- UTF-8.
+- Responsive viewport metadata.
+- Theme-color metadata.
+- Open Graph title, description, type, and image where available.
+- Social sharing card metadata where appropriate.
+- Favicon.
+- Semantic headings.
+- Descriptive image alt text.
+- Correct relative paths.
+
+Suggested title:
+M Taha Amin — Web Developer & AI Explorer
+
+You may improve the wording if a better original title fits the design.
+
+Do not invent professional claims.
+
+Set canonical URLs and final deployment URLs only when known.
+
+If the final GitHub Pages URL is not known, document where it must be configured
+after deployment.
+
+Do not claim that Google has indexed the website.
+
+============================================================
+24. ASSETS AND FILE STRUCTURE
+============================================================
+
+Inspect the existing project before deciding its structure.
+
+If a suitable structure does not exist, use something similar to:
+
+index.html
+projects.html                 (if useful)
+styles/
+    main.css
+scripts/
+    main.js
+    projects-data.js
+    gallery.js                 (if useful)
+assets/
+    images/
+        portrait
+        projects/
+        sketches/
+        ai-art/
+        favicon.svg
+        social-preview
+    documents/
+        CV.pdf
+README.md
+.nojekyll                      (optional)
+
+This is a suggested structure, not a requirement to move existing files.
+
+Reuse the actual assets and filenames found in the workspace.
+
+Do not duplicate large files unnecessarily.
+
+Use relative paths so the site works on GitHub Pages project URLs.
+
+If there are already suitable files or folders, adapt the structure instead of
+replacing everything.
+
+============================================================
+25. GITHUB PAGES DEPLOYMENT
+============================================================
+
+The target is a public GitHub Pages portfolio.
+
+Requirements:
+- Static website.
+- No required backend.
+- Correct relative paths.
+- No assumption of a custom domain.
+- No secrets or credentials.
+- No automatic push or deployment without authorization.
+
+If the current workspace is connected to a repository, preserve its settings.
+
+Create README instructions explaining:
+
+1. How to preview the site locally.
+2. How to choose or create a GitHub repository.
+3. How to upload/push the files manually.
+4. How to open repository Settings.
+5. How to open Pages.
+6. How to select the correct branch and root folder.
+7. How to wait for publication.
+8. How to find the resulting GitHub Pages URL.
+9. How to update canonical and social-sharing URLs.
+
+Do not claim deployment is complete unless it has actually been completed and
+verified.
+
+============================================================
+26. README AND FUTURE MAINTENANCE
+============================================================
+
+Create or update README.md.
+
+Explain:
+- Project overview.
+- Technologies used.
+- File and folder structure.
+- How to run the website.
+- How to add a project.
+- How to add project screenshots.
+- How to update project links.
+- How to add gallery images.
+- How to update image captions.
+- How to replace the portrait.
+- How to add or replace the CV PDF.
+- How to update social links.
+- How to deploy using GitHub Pages.
+- How to update SEO metadata.
+- Any missing assets or known limitations.
+
+Keep the project data easy to maintain.
+
+A student should be able to add a new project or image without rewriting the
+whole website.
+
+============================================================
+27. CODE QUALITY
+============================================================
+
+Use:
+- Semantic HTML.
+- Organized CSS.
+- CSS custom properties.
+- Clear class names.
+- Readable JavaScript.
+- Small, maintainable functions.
+- Safe handling of missing assets.
+- Accessible interaction patterns.
+- Clear data structures for projects and galleries.
+
+Avoid:
+- Huge, tangled scripts.
+- Duplicated code.
+- eval.
+- Unsafe HTML injection.
+- Fake links.
+- Hard-coded invented data.
+- Unnecessary dependencies.
+- Console errors.
+- Broken asset paths.
+
+Keep all existing useful functionality.
+
+============================================================
+28. FINAL TESTING CHECKLIST
+============================================================
+
+Before reporting completion, check:
+
+[ ] Existing files and assets inspected.
+[ ] Existing useful work preserved.
+[ ] Complete homepage implemented.
+[ ] Hero and all required sections implemented.
+[ ] Navbar stays visible and navigation works.
+[ ] Mobile navigation works.
+[ ] Smooth scrolling works.
+[ ] Reduced-motion preferences are respected.
+[ ] Custom cursor works on desktop only.
+[ ] Project data is based on real available information.
+[ ] Project cards open the correct modal.
+[ ] Modal closes correctly, including Escape.
+[ ] Keyboard focus is handled properly.
+[ ] Live previews only appear for verified demos.
+[ ] Source-code links work.
+[ ] Gallery uses real assets.
+[ ] Lightbox works and supports keyboard interaction.
+[ ] No video gallery has been added.
+[ ] Travel is represented only as an interest.
+[ ] Education details are accurate.
+[ ] Future FAST University goal is not presented as completed education.
+[ ] No fabricated dates or achievements.
+[ ] Skills progress is honest.
+[ ] All social links use the provided URLs.
+[ ] WhatsApp URL is correct.
+[ ] No contact form exists.
+[ ] CV button works if the real PDF exists.
+[ ] Missing CV is handled without a broken link.
+[ ] Images have alt text.
+[ ] Images load efficiently.
+[ ] No horizontal overflow on mobile.
+[ ] Layout checked at multiple viewport widths.
+[ ] SEO metadata is present.
+[ ] Favicon works.
+[ ] Internal links and asset paths work.
+[ ] No fake testimonials or statistics.
+[ ] No obvious console errors, if browser testing is available.
+[ ] README is complete.
+[ ] GitHub Pages instructions are correct.
+[ ] Untested items are honestly disclosed.
+
+Use available browser/testing tools where possible.
+
+If a test cannot be performed, state that clearly and provide manual test steps.
+Never claim a test passed unless it was actually performed.
+
+============================================================
+29. FINAL HANDOFF
+============================================================
+
+After building and testing, provide a final report containing:
+
+1. Files created.
+2. Existing files modified.
+3. Features implemented.
+4. GitHub repositories actually inspected.
+5. Verified live demo links.
+6. Unavailable or unverified demos.
+7. Whether the portrait, screenshots, sketches, AI artwork, and CV were found.
+8. Tests performed and results.
+9. Any remaining missing assets or limitations.
+10. How to preview locally.
+11. GitHub Pages deployment instructions.
+12. Expected published URL format, without falsely claiming the site is live.
+
+Do not stop after planning.
+
+Inspect the current folder, build the complete portfolio, test it, document it,
+and leave the workspace in a usable state.
+
+END OF SPECIFICATION
