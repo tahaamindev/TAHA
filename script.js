@@ -5,6 +5,7 @@
   const galleryGrid = document.querySelector("#gallery-grid");
   const projectDialog = document.querySelector("#project-dialog");
   const lightboxDialog = document.querySelector("#lightbox-dialog");
+  const cursor = document.querySelector(".cursor-orb");
   const menuToggle = document.querySelector(".menu-toggle");
   const navLinks = document.querySelector("#site-navigation");
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -107,11 +108,13 @@
       preview.hidden = true;
     }
     projectDialog.showModal();
+    if (document.body.classList.contains("custom-cursor-ready")) projectDialog.append(cursor);
     projectDialog.querySelector(".dialog-close").focus();
   }
 
   function closeDialog(dialog, trigger) {
     if (dialog.open) dialog.close();
+    if (cursor && cursor.parentElement !== document.body) document.body.append(cursor);
     if (trigger?.isConnected) trigger.focus();
   }
 
@@ -149,6 +152,7 @@
     galleryTrigger = card;
     showGalleryItem(Number(card.dataset.galleryIndex));
     lightboxDialog.showModal();
+    if (document.body.classList.contains("custom-cursor-ready")) lightboxDialog.append(cursor);
     lightboxDialog.querySelector(".lightbox-close").focus();
   });
   lightboxDialog.querySelector(".lightbox-close").addEventListener("click", () => {
@@ -216,7 +220,6 @@
   }
 
   const cursorQuery = window.matchMedia("(hover: hover) and (pointer: fine)");
-  const cursor = document.querySelector(".cursor-orb");
   if (cursorQuery.matches && !reduceMotion.matches) {
     document.body.classList.add("custom-cursor-ready");
     let frame = 0;

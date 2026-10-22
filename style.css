@@ -949,6 +949,7 @@ p {
 }
 
 .project-image-wrap {
+  position: relative;
   display: block;
   overflow: hidden;
   aspect-ratio: 16 / 8.6;
@@ -1093,12 +1094,6 @@ p {
   color: #fff;
   font-size: clamp(15px, 2vw, 21px);
   letter-spacing: -.025em;
-}
-
-.gallery-note {
-  margin: 18px 0 0;
-  color: var(--muted);
-  font-size: 10px;
 }
 
 .travel-section {
@@ -1261,15 +1256,15 @@ p {
 }
 
 .footer-group {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
   align-content: start;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 10px 17px;
+  gap: 11px 18px;
 }
 
 .footer-group h2 {
-  width: 100%;
+  grid-column: 1 / -1;
   margin: 0 0 2px;
   color: #aaa9a6;
   font-size: 9px;
@@ -1437,6 +1432,11 @@ p {
   cursor: none;
 }
 
+.custom-cursor-ready dialog,
+.custom-cursor-ready dialog * {
+  cursor: none;
+}
+
 .custom-cursor-ready .cursor-orb {
   display: block;
 }
@@ -1577,6 +1577,10 @@ dialog {
   margin-top: 27px;
   flex-wrap: wrap;
   gap: 10px;
+}
+
+.dialog-actions .button {
+  min-width: 138px;
 }
 
 .lightbox-dialog {
@@ -1801,7 +1805,7 @@ dialog {
   .hero-portrait {
     z-index: 1;
     display: block;
-    width: min(250px, 68vw);
+    width: min(300px, 78vw);
     grid-column: 1;
     grid-row: 1;
     justify-self: center;
@@ -2107,7 +2111,7 @@ dialog {
   }
 
   .hero-portrait {
-    width: min(300px, 78vw);
+    width: min(320px, 84vw);
   }
 
   .hero-actions {
@@ -2253,7 +2257,7 @@ dialog {
   }
 
   .hero-portrait {
-    width: min(190px, 48vw, calc((100svh - 568px) * .35 + 140px));
+    width: min(210px, 55vw, calc((100svh - 568px) * .35 + 160px));
   }
 
   .hero-bottomline {
