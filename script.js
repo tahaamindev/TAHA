@@ -137,7 +137,7 @@
     const image = lightboxDialog.querySelector(".lightbox-image");
     image.src = item.image;
     image.alt = item.alt;
-    lightboxDialog.querySelector(".lightbox-caption").textContent = `${item.category} — ${item.caption}`;
+    lightboxDialog.querySelector(".lightbox-caption").textContent = `${item.category}: ${item.caption}`;
     const hasMultipleItems = galleryItems.length > 1;
     lightboxDialog.querySelector(".lightbox-previous").hidden = !hasMultipleItems;
     lightboxDialog.querySelector(".lightbox-next").hidden = !hasMultipleItems;
@@ -220,15 +220,20 @@
   if (cursorQuery.matches && !reduceMotion.matches) {
     document.body.classList.add("custom-cursor-ready");
     let frame = 0;
+    let pointerX = 0;
+    let pointerY = 0;
     window.addEventListener("pointermove", (event) => {
-      if (frame) cancelAnimationFrame(frame);
+      pointerX = event.clientX;
+      pointerY = event.clientY;
+      if (frame) return;
       frame = requestAnimationFrame(() => {
-        const edge = 11;
+        const edge = 8;
         const maxX = Math.max(edge, document.documentElement.clientWidth - edge);
         const maxY = Math.max(edge, window.innerHeight - edge);
-        const x = Math.min(Math.max(event.clientX, edge), maxX);
-        const y = Math.min(Math.max(event.clientY, edge), maxY);
+        const x = Math.min(Math.max(pointerX, edge), maxX);
+        const y = Math.min(Math.max(pointerY, edge), maxY);
         cursor.style.transform = `translate3d(${x}px, ${y}px, 0)`;
+        cursor.classList.add("is-visible");
         frame = 0;
       });
     }, { passive: true });

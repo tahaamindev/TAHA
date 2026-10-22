@@ -108,6 +108,8 @@ COLOR PALETTE:
 - Soft gray.
 - Polished silver.
 - Subtle chrome and metallic gradients.
+- Keep the hero black and alternate silver and black surfaces through the
+  remaining homepage sections.
 
 STRICTLY AVOID:
 - Purple gradients.
@@ -527,6 +529,8 @@ Use refined animations throughout the site:
 - Refined button interactions.
 - Minimal intro animation.
 - Smooth gallery interactions.
+- Let section headings scroll naturally with their content; use subtle,
+  one-time scroll reveals for an editorial scrolling rhythm.
 
 Animations should be premium, purposeful, and never distracting.
 
@@ -893,8 +897,13 @@ Before reporting completion, check:
 [ ] Missing CV is handled without a broken link.
 [ ] Images have alt text.
 [ ] Images load efficiently.
-[ ] No horizontal overflow on mobile.
-[ ] Layout checked at multiple viewport widths.
+[x] No horizontal overflow on mobile.
+[x] Layout checked at multiple viewport widths.
+[x] Hero remains black and the remaining sections alternate silver and black.
+[x] Section headings scroll naturally without sticking to the viewport.
+[x] Hero fits within the viewport at tested desktop, tablet and mobile sizes.
+[x] Hero portrait, information card, copy and bottom row do not overlap.
+[x] Scroll reveals remain subtle and respect reduced-motion preferences.
 [ ] SEO metadata is present.
 [ ] Favicon works.
 [ ] Internal links and asset paths work.

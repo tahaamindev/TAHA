@@ -1,6 +1,6 @@
-# M Taha Amin — Portfolio
+# M Taha Amin | Portfolio
 
-A responsive, static portfolio for M Taha Amin, a student, web developer, AI explorer and visual creator in Islamabad. Built with semantic HTML, CSS and vanilla JavaScript for GitHub Pages.
+A responsive, static portfolio for M Taha Amin, a student, web developer and visual creator in Islamabad. Built with semantic HTML, CSS and vanilla JavaScript for GitHub Pages.
 
 ## Preview locally
 
@@ -11,6 +11,10 @@ python -m http.server 8000
 ```
 
 Then visit <http://localhost:8000>.
+
+## Design and scrolling
+
+The homepage keeps the hero in near-black, then alternates matte-silver and charcoal sections. Section headings scroll normally with their content. Subtle, one-time scroll reveals use `IntersectionObserver`, and the floating glass navigation remains readable over both light and dark sections. Motion respects the operating system's reduced-motion preference.
 
 ## Project structure
 
@@ -35,7 +39,7 @@ Edit `window.portfolioGallery` in `projects.js` to add an image path, category, 
 
 ### Replace the portrait or add creative assets
 
-Replace `images/main.png` with the portrait you want to use, keeping the same path or updating `index.html`. The current gallery has one supplied interface study; no sketch or science-project images were included. Add those assets before describing or displaying them.
+Replace `images/main.webp` with the optimized portrait you want to use, keeping the same path or updating `index.html`. Update `images/main.png` too if you want the social-sharing preview to use the same portrait. The current gallery has one supplied interface study; no sketch or science-project images were included. Add those assets before describing or displaying them.
 
 ### Add a CV
 
@@ -62,4 +66,4 @@ For a project repository, the Pages URL is usually `https://<username>.github.io
 
 The project cards reference the public repositories [T-Attendie](https://github.com/tahaamindev/T-Attendie), [AIMZ](https://github.com/tahaamindev/AIMZ) and [JK-Collection](https://github.com/tahaamindev/JK-Collection), and use their corresponding supplied GIF previews. Their repository root files confirmed HTML, CSS and JavaScript usage; T-Attendie also includes PWA-related files. No README files or verified hosted demos were available during inspection, so no live-preview buttons are shown.
 
-The supplied portrait files are `images/main.png` and `images/about.png`; this page uses `main.png`. The supplied project previews are the three GIFs in `images/`. `images/ice.jpg` is used as an interface study in the creative gallery. No CV PDF, sketch images or science-project photos were present. Travel is presented only as an interest; no destinations or trips are claimed.
+The supplied portrait files are `images/main.png` and `images/about.png`; this page uses the optimized `main.webp` image and keeps `main.png` for social sharing. The supplied project previews are the three GIFs in `images/`. `images/ice.jpg` is used as an interface study in the creative gallery. No CV PDF, sketch images or science-project photos were present. Travel is presented only as an interest; no destinations or trips are claimed.
