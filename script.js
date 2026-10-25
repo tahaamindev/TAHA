@@ -6,6 +6,7 @@
   const projectDialog = document.querySelector("#project-dialog");
   const lightboxDialog = document.querySelector("#lightbox-dialog");
   const cursor = document.querySelector(".cursor-orb");
+  const siteHeader = document.querySelector(".site-header");
   const menuToggle = document.querySelector(".menu-toggle");
   const navLinks = document.querySelector("#site-navigation");
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -15,6 +16,37 @@
 
   document.body.classList.add("js-ready");
   document.querySelector("#current-year").textContent = new Date().getFullYear();
+  requestAnimationFrame(() => siteHeader.classList.add("is-visible"));
+
+  let previousScrollY = window.scrollY;
+  let lastScrollDirection = 0;
+  let directionDistance = 0;
+  let scrollFrame = 0;
+  window.addEventListener("scroll", () => {
+    if (scrollFrame) return;
+    scrollFrame = requestAnimationFrame(() => {
+      const currentScrollY = window.scrollY;
+      const scrollDelta = currentScrollY - previousScrollY;
+      const menuIsOpen = menuToggle.getAttribute("aria-expanded") === "true";
+      const scrollDirection = Math.sign(scrollDelta);
+
+      if (currentScrollY <= 32 || menuIsOpen) {
+        siteHeader.classList.remove("is-compact");
+        directionDistance = 0;
+      } else if (scrollDirection) {
+        if (scrollDirection !== lastScrollDirection) directionDistance = 0;
+        directionDistance += Math.abs(scrollDelta);
+        if (directionDistance > 8) {
+          siteHeader.classList.toggle("is-compact", scrollDirection > 0);
+          directionDistance = 0;
+        }
+      }
+
+      if (scrollDirection) lastScrollDirection = scrollDirection;
+      previousScrollY = currentScrollY;
+      scrollFrame = 0;
+    });
+  }, { passive: true });
 
   function createProjectCard(project, index) {
     const card = document.createElement("button");
@@ -53,11 +85,18 @@
   projects.forEach((project, index) => projectGrid.append(createProjectCard(project, index)));
 
   function createGalleryCard(item, index) {
-    const button = document.createElement("button");
-    button.type = "button";
-    button.className = "gallery-card";
-    button.dataset.galleryIndex = String(index);
-    button.setAttribute("aria-label", `Open ${item.category.toLowerCase()}: ${item.caption}`);
+    const card = item.link ? document.createElement("a") : document.createElement("button");
+    if (card instanceof HTMLButtonElement) {
+      card.type = "button";
+      card.dataset.galleryIndex = String(index);
+      card.setAttribute("aria-label", `Open ${item.category.toLowerCase()}: ${item.caption}`);
+    } else {
+      card.href = item.link;
+      card.target = "_blank";
+      card.rel = "noopener noreferrer";
+      card.setAttribute("aria-label", `Visit ${item.category.toLowerCase()} website (opens in a new tab)`);
+    }
+    card.className = "gallery-card";
 
     const image = document.createElement("img");
     image.src = item.image;
@@ -75,8 +114,8 @@
     caption.className = "gallery-caption";
     caption.textContent = item.caption;
     detail.append(category, caption);
-    button.append(image, detail);
-    return button;
+    card.append(image, detail);
+    return card;
   }
 
   galleryItems.forEach((item, index) => galleryGrid.append(createGalleryCard(item, index)));
@@ -175,6 +214,7 @@
   function setMenuOpen(isOpen) {
     menuToggle.setAttribute("aria-expanded", String(isOpen));
     navLinks.classList.toggle("is-open", isOpen);
+    if (isOpen) siteHeader.classList.add("is-visible");
   }
 
   menuToggle.addEventListener("click", () => {

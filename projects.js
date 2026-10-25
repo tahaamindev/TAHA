@@ -1,13 +1,13 @@
 window.portfolioProjects = [
   {
-    name: "Tersynex Agency",
-    category: "Independent creative agency",
-    description: "A self-started agency project launched in September 2026. It is in its early stages and currently being developed.",
-    image: "images/Tersynex.jpg",
-    imageAlt: "Tersynex agency homepage with its navigation, headline and project enquiry button",
-    technologies: ["Web design", "Creative direction"],
-    source: "https://github.com/Tersynex/agency",
-    preview: "https://tersynex.github.io/agency/"
+    name: "AIMZ",
+    category: "E-commerce concept",
+    description: "A luxury e-commerce storefront concept with product discovery, category navigation and a high-contrast black-and-gold visual system.",
+    image: "images/AIMZ.gif",
+    imageAlt: "AIMZ luxury storefront with black and gold styling and a featured collection",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    source: "https://github.com/tahaamindev/AIMZ",
+    preview: "https://tahaamindev.github.io/AIMZ/"
   },
   {
     name: "T‑Attendie",
@@ -20,14 +20,14 @@ window.portfolioProjects = [
     preview: "https://tahaamindev.github.io/T-Attendie/"
   },
   {
-    name: "AIMZ",
-    category: "E-commerce concept",
-    description: "A luxury e-commerce storefront concept with product discovery, category navigation and a high-contrast black-and-gold visual system.",
-    image: "images/AIMZ.gif",
-    imageAlt: "AIMZ luxury storefront with black and gold styling and a featured collection",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    source: "https://github.com/tahaamindev/AIMZ",
-    preview: "https://tahaamindev.github.io/AIMZ/"
+    name: "Tersynex Agency",
+    category: "Independent creative agency",
+    description: "A self-started agency project launched in September 2026. It is in its early stages and currently being developed.",
+    image: "images/Tersynex.jpg",
+    imageAlt: "Tersynex agency homepage with its navigation, headline and project enquiry button",
+    technologies: ["Web design", "Creative direction"],
+    source: "https://github.com/Tersynex/agency",
+    preview: "https://tersynex.github.io/agency/"
   },
   {
     name: "JK Collection",
@@ -56,6 +56,7 @@ window.portfolioGallery = [
     image: "images/Tersynex.jpg",
     alt: "Tersynex agency homepage with its navigation, headline and project enquiry button",
     category: "Independent agency",
-    caption: "Started in September 2026. In its early stages and currently in development."
+    caption: "Started in September 2026. In its early stages and currently in development.",
+    link: "https://tersynex.github.io/agency/"
   }
 ];
