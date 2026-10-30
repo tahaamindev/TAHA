@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tahaamindev.github.io/TAHA/sitemap.xml

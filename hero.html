@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#080808">
+  <link rel="canonical" href="https://tahaamindev.github.io/TAHA/">
+  <title>M Taha Amin | Portfolio</title>
+
+  <style>
+    :root {
+      --bg: #080808;
+      --white: #f5f5f7;
+      --muted: #a5a5ab;
+      --silver: #c8c8ce;
+      --pad: clamp(22px, 5vw, 76px);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--bg);
+      color: var(--white);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display",
+        "Helvetica Neue", Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .hero {
+      position: relative;
+      isolation: isolate;
+      min-height: 100svh;
+      overflow: hidden;
+      background:
+        radial-gradient(ellipse at 56% 48%,
+          rgba(210, 210, 220, .12), transparent 34%),
+        linear-gradient(135deg, #131313, #080808 55%, #030303);
+    }
+
+    /* Subtle architectural grid */
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+      opacity: .45;
+      background:
+        linear-gradient(90deg,
+          transparent 9.9%, #ffffff16 10%, transparent 10.1%,
+          transparent 89.9%, #ffffff16 90%, transparent 90.1%),
+        linear-gradient(180deg,
+          transparent 14.9%, #ffffff12 15%, transparent 15.1%,
+          transparent 84.9%, #ffffff12 85%, transparent 85.1%);
+    }
+
+    /* Navbar */
+    .header {
+      height: 76px;
+      padding: 0 var(--pad);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #ffffff17;
+      background: #08080875;
+      backdrop-filter: blur(22px);
+      -webkit-backdrop-filter: blur(22px);
+      position: relative;
+      z-index: 10;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      font-size: 14px;
+      font-weight: 650;
+      letter-spacing: -.04em;
+    }
+
+    .monogram {
+      width: 30px;
+      height: 30px;
+      border: 1px solid #ffffff75;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-size: 10px;
+      letter-spacing: -.04em;
+    }
+
+    .nav {
+      display: flex;
+      gap: clamp(20px, 3vw, 42px);
+    }
+
+    .nav a {
+      color: #bdbdc3;
+      font-size: 11px;
+      transition: color .2s;
+    }
+
+    .nav a:hover {
+      color: white;
+    }
+
+    /* Hero composition */
+    .stage {
+      position: relative;
+      min-height: calc(100svh - 76px);
+      min-height: max(644px, calc(100svh - 76px));
+      overflow: hidden;
+    }
+
+    .watermark {
+      position: absolute;
+      top: 7%;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: clamp(120px, 24vw, 350px);
+      font-weight: 800;
+      letter-spacing: -.105em;
+      line-height: .8;
+      color: #ffffff09;
+      white-space: nowrap;
+      pointer-events: none;
+    }
+
+    /* Central portrait */
+    .portrait-glow {
+      position: absolute;
+      width: min(58vw, 680px);
+      height: min(58vw, 680px);
+      border-radius: 50%;
+      left: 55%;
+      top: 44%;
+      transform: translate(-50%, -50%);
+      background: #d2d2dc15;
+      filter: blur(75px);
+      pointer-events: none;
+    }
+
+    .portrait-wrap {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .portrait {
+      display: block;
+      width: min(57vw, 760px);
+      height: 100%;
+      object-fit: contain;
+      object-position: center bottom;
+      filter: grayscale(1) contrast(1.04);
+      -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 87%,
+          #000c 95%, transparent 100%);
+      mask-image: linear-gradient(to bottom, #000 0%, #000 87%,
+          #000c 95%, transparent 100%);
+    }
+
+    /* Left-side content — intentionally overlaps portrait slightly */
+    .left-content {
+      position: absolute;
+      z-index: 4;
+      left: var(--pad);
+      top: 50%;
+      transform: translateY(-43%);
+      width: min(57%, 680px);
+      padding-bottom: 5px;
+    }
+
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 25px;
+      color: var(--silver);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: .17em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 28px;
+      height: 1px;
+      background: linear-gradient(90deg, white, transparent);
+    }
+
+    h1 {
+      margin: 0;
+      position: relative;
+      z-index: 5;
+      font-size: clamp(62px, 9.5vw, 144px);
+      line-height: .79;
+      letter-spacing: -.095em;
+      font-weight: 760;
+    }
+
+    h1 span {
+      display: block;
+      white-space: nowrap;
+    }
+
+    h1 .outline {
+      margin-top: .13em;
+      color: transparent;
+      -webkit-text-stroke: 1px #f5f5f7e8;
+    }
+
+    .description {
+      max-width: 325px;
+      margin: 27px 0 0 3px;
+      color: #b4b4bb;
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+    .actions {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      flex-wrap: wrap;
+      margin: 24px 0 0 3px;
+    }
+
+    .btn {
+      min-height: 43px;
+      padding: 0 17px;
+      border: 1px solid #ffffff48;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 13px;
+      font-size: 11px;
+      font-weight: 600;
+      transition: transform .2s, background .2s, border-color .2s;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background: var(--white);
+      color: #080808;
+      border-color: var(--white);
+    }
+
+    .btn-primary:hover {
+      background: #d8d8dc;
+    }
+
+    .btn-secondary {
+      background: #ffffff09;
+    }
+
+    .btn-secondary:hover {
+      background: #ffffff17;
+      border-color: #ffffff90;
+    }
+
+    /* Social links only on the right */
+    .socials {
+      position: absolute;
+      z-index: 8;
+      right: var(--pad);
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 11px;
+    }
+
+    .social-label {
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      margin-bottom: 7px;
+      color: #77777f;
+      font-size: 9px;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+    }
+
+    .social-link {
+      width: 39px;
+      height: 39px;
+      display: grid;
+      place-items: center;
+      border: 1px solid #ffffff30;
+      border-radius: 50%;
+      background: #111111a8;
+      color: #d8d8dc;
+      backdrop-filter: blur(12px);
+      transition: transform .2s, color .2s, background .2s;
+    }
+
+    .social-link svg {
+      width: 16px;
+      height: 16px;
+      fill: currentColor;
+    }
+
+    .social-link:hover {
+      transform: translateX(-3px);
+      background: #f5f5f7;
+      color: #080808;
+      border-color: white;
+    }
+
+    .social-line {
+      width: 1px;
+      height: 28px;
+      background: linear-gradient(#aaa, transparent);
+      margin-top: 5px;
+    }
+
+    /* Bottom edge detail */
+    .bottom-note {
+      position: absolute;
+      z-index: 3;
+      bottom: 22px;
+      left: var(--pad);
+      right: var(--pad);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #77777e;
+      font-size: 9px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      pointer-events: none;
+    }
+
+    .bottom-note .line {
+      display: inline-block;
+      width: 25px;
+      height: 1px;
+      margin-right: 9px;
+      vertical-align: middle;
+      background: #777;
+    }
+
+    /* Subtle entrance */
+    @keyframes rise {
+      from {
+        opacity: 0;
+        translate: 0 16px;
+      }
+
+      to {
+        opacity: 1;
+        translate: 0 0;
+      }
+    }
+
+    .animate {
+      animation: rise .75s cubic-bezier(.2, .75, .25, 1) both;
+    }
+
+    .delay-1 {
+      animation-delay: .1s;
+    }
+
+    .delay-2 {
+      animation-delay: .2s;
+    }
+
+    .delay-3 {
+      animation-delay: .3s;
+    }
+
+    /* Tablet */
+    @media (max-width: 850px) {
+      .portrait {
+        width: min(68vw, 650px);
+      }
+
+      .left-content {
+        width: 58%;
+        top: 52%;
+      }
+
+      h1 {
+        font-size: clamp(60px, 10vw, 100px);
+      }
+
+      .description {
+        max-width: 280px;
+      }
+
+      .socials {
+        right: 20px;
+      }
+
+      .social-link {
+        width: 35px;
+        height: 35px;
+      }
+    }
+
+    /* Mobile */
+    @media (max-width: 620px) {
+      .header {
+        height: 66px;
+      }
+
+      .brand {
+        font-size: 12px;
+      }
+
+      .monogram {
+        width: 27px;
+        height: 27px;
+      }
+
+      .nav {
+        gap: 12px;
+      }
+
+      .nav a {
+        font-size: 9px;
+      }
+
+      .stage {
+        min-height: calc(100svh - 66px);
+        min-height: max(694px, calc(100svh - 66px));
+      }
+
+      .watermark {
+        top: 13%;
+        font-size: 29vw;
+      }
+
+      .portrait-glow {
+        top: 40%;
+        left: 53%;
+        width: 90vw;
+        height: 90vw;
+        filter: blur(55px);
+      }
+
+      .portrait {
+        width: 100%;
+        height: 70%;
+        opacity: .88;
+        object-position: center bottom;
+      }
+
+      .left-content {
+        top: auto;
+        bottom: 76px;
+        left: var(--pad);
+        width: calc(100% - 44px);
+        transform: none;
+      }
+
+      .eyebrow {
+        font-size: 8px;
+        letter-spacing: .11em;
+        margin-bottom: 18px;
+      }
+
+      h1 {
+        font-size: clamp(54px, 14.5vw, 86px);
+        line-height: .82;
+      }
+
+      h1 .outline {
+        -webkit-text-stroke: .8px #f5f5f7eb;
+      }
+
+      .description {
+        max-width: 275px;
+        margin-top: 18px;
+        font-size: 12px;
+        line-height: 1.65;
+      }
+
+      .actions {
+        margin-top: 17px;
+        gap: 8px;
+      }
+
+      .btn {
+        min-height: 39px;
+        padding: 0 13px;
+        font-size: 10px;
+      }
+
+      .socials {
+        top: auto;
+        bottom: 20px;
+        right: var(--pad);
+        transform: none;
+        flex-direction: row;
+        gap: 7px;
+      }
+
+      .social-label,
+      .social-line {
+        display: none;
+      }
+
+      .social-link {
+        width: 31px;
+        height: 31px;
+      }
+
+      .social-link svg {
+        width: 14px;
+        height: 14px;
+      }
+
+      .bottom-note {
+        bottom: 25px;
+        left: var(--pad);
+        right: auto;
+        font-size: 7px;
+        letter-spacing: .07em;
+      }
+
+      .bottom-note .line {
+        width: 13px;
+        margin-right: 5px;
+      }
+    }
+
+    @media (max-width: 390px) {
+      :root {
+        --pad: 16px;
+      }
+
+      .nav {
+        gap: 9px;
+      }
+
+      .nav a {
+        font-size: 8px;
+      }
+
+      .left-content {
+        width: calc(100% - 32px);
+      }
+
+      h1 {
+        font-size: 51px;
+      }
+
+      .socials {
+        gap: 5px;
+      }
+
+      .social-link {
+        width: 28px;
+        height: 28px;
+      }
+
+      .description {
+        max-width: 250px;
+      }
+
+      .btn {
+        padding: 0 10px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section class="hero" id="home">
+    <header class="header">
+      <a class="brand" href="#home">
+        <span class="monogram">TA</span>
+        <span>M Taha Amin</span>
+      </a>
+
+      <nav class="nav" aria-label="Navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <div class="stage">
+      <div class="watermark" aria-hidden="true">TAHA</div>
+      <div class="portrait-glow" aria-hidden="true"></div>
+
+      <div class="portrait-wrap">
+        <img class="portrait" src="main3.png" alt="Portrait of M Taha Amin" fetchpriority="high">
+      </div>
+
+      <div class="left-content">
+        <div class="eyebrow animate">
+          Web developer · AI explorer · Visual creator
+        </div>
+
+        <h1 class="animate delay-1">
+          <span>M TAHA</span>
+          <span class="outline">AMIN.</span>
+        </h1>
+
+        <p class="description animate delay-2">
+          I build what I’m curious about — thoughtful websites,
+          digital experiences, and creative experiments shaped by
+          code and imagination.
+        </p>
+
+        <div class="actions animate delay-3">
+          <a class="btn btn-primary" href="#work">
+            Explore my work <span aria-hidden="true">↗</span>
+          </a>
+          <a class="btn btn-secondary" href="#about">
+            About me <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+      </div>
+
+      <aside class="socials" aria-label="Social media links">
+        <span class="social-label">Find me online</span>
+
+        <a class="social-link" href="https://www.instagram.com/m.tahaamin" target="_blank" rel="noopener noreferrer"
+          aria-label="Instagram" title="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm0 2A3.8 3.8 0 0 0 4 7.8v8.4A3.8 3.8 0 0 0 7.8 20h8.4a3.8 3.8 0 0 0 3.8-3.8V7.8A3.8 3.8 0 0 0 16.2 4H7.8Zm4.2 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5.2-3.5a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4Z" />
+          </svg>
+        </a>
+
+        <a class="social-link" href="https://www.tiktok.com/@tahaamin504/" target="_blank" rel="noopener noreferrer"
+          aria-label="TikTok" title="TikTok">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M19.6 7.2a7.2 7.2 0 0 1-4.4-1.5v8.1a6.3 6.3 0 1 1-6.3-6.3c.4 0 .8 0 1.2.1v3.5a3 3 0 1 0 1.6 2.7V2h3.5c.3 2.5 2.1 4.4 4.4 4.7v.5Z" />
+          </svg>
+        </a>
+
+        <a class="social-link" href="https://github.com/tahaamindev" target="_blank" rel="noopener noreferrer"
+          aria-label="GitHub" title="GitHub">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M12 .8a11.2 11.2 0 0 0-3.5 21.8c.6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.6-1.3-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.7 2.1 3.3 1.5.1-.7.4-1.2.7-1.5-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.5-2.7 5.5-5.3 5.8.4.3.8 1 .8 2v2.9c0 .3.2.7.8.6A11.2 11.2 0 0 0 12 .8Z" />
+          </svg>
+        </a>
+
+        <a class="social-link" href="https://www.linkedin.com/in/taha-amin-undefined-9a4148438/" target="_blank"
+          rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M5.2 3a2.2 2.2 0 1 1 0 4.4 2.2 2.2 0 0 1 0-4.4ZM3.3 9h3.8v12H3.3V9Zm6.1 0H13v1.6h.1a4.1 4.1 0 0 1 3.7-2c4 0 4.7 2.6 4.7 6V21h-3.8v-5.7c0-1.4 0-3.2-2-3.2s-2.3 1.5-2.3 3.1V21H9.4V9Z" />
+          </svg>
+        </a>
+
+        <a class="social-link" href="https://www.facebook.com/people/M-Taha-Amin/61593492703992/" target="_blank"
+          rel="noopener noreferrer" aria-label="Facebook" title="Facebook">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M13.5 21v-8.2h2.8l.4-3.2h-3.2V7.5c0-.9.3-1.6 1.6-1.6h1.7V3.1c-.3 0-1.4-.1-2.6-.1-2.6 0-4.4 1.6-4.4 4.5v2.1H7v3.2h2.8V21h3.7Z" />
+          </svg>
+        </a>
+
+        <a class="social-link" href="https://wa.me/923139427015" target="_blank" rel="noopener noreferrer"
+          aria-label="WhatsApp" title="WhatsApp">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M12 2a9.7 9.7 0 0 0-8.3 14.7L2.4 22l5.4-1.4A9.7 9.7 0 1 0 12 2Zm0 17.7a8 8 0 0 1-4.1-1.1l-.3-.2-3.2.8.9-3.1-.2-.3A8 8 0 1 1 12 19.7Zm4.4-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.8.9-.1.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.4.1-.5l.4-.5c.1-.1.2-.3.2-.4.1-.2 0-.3 0-.4l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.3c.1.2 1.6 2.5 3.8 3.4.5.2.9.4 1.2.4.5.2 1 .2 1.4.1.4-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1-.1-.1-.2-.2-.4-.3Z" />
+          </svg>
+        </a>
+
+        <span class="social-line" aria-hidden="true"></span>
+      </aside>
+
+      <div class="bottom-note">
+        <span>Independent mind. Always learning.</span>
+        <span><i class="line"></i>Scroll to explore</span>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
