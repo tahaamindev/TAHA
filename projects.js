@@ -48,6 +48,16 @@ window.portfolioProjects = [
     technologies: ["HTML", "CSS", "JavaScript"],
     source: "https://github.com/tahaamindev/music",
     preview: "https://tahaamindev.github.io/music/"
+  },
+  {
+    name: "Toolify",
+    category: "Tool library · Web app",
+    description: "A personal cloud-synced tool library to save, organize and explore web tools in one place. It includes categories, an Add Tool form, saved favorites, notes, a music player and theme support.",
+    image: "images/toolify.jpg",
+    imageAlt: "Toolify tool library homepage showing categories, add tool form and saved tools grid",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    source: "https://github.com/tahaamindev/toolify",
+    preview: "https://tahaamindev.github.io/toolify/"
   }
 ];
 

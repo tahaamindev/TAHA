@@ -1,0 +1,24 @@
+{
+  "name": "taha",
+  "version": "1.0.0",
+  "description": "A responsive, static portfolio for M Taha Amin, a student, web developer and visual creator in Islamabad. Built with semantic HTML, CSS and vanilla JavaScript for GitHub Pages.",
+  "main": "projects.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tahaamindev/TAHA.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/tahaamindev/TAHA/issues"
+  },
+  "homepage": "https://github.com/tahaamindev/TAHA#readme",
+  "dependencies": {
+    "pdfmake": "^0.3.14"
+  }
+}

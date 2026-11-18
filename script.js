@@ -244,7 +244,7 @@
     if (!event.target.closest(".nav-shell")) setMenuOpen(false);
   });
 
-  const revealTargets = document.querySelectorAll(".section-heading, .about-copy, .education-item, .skill-row, .tool-card, .project-card, .gallery-card, .travel-copy, .contact-intro, .social-grid a");
+  const revealTargets = document.querySelectorAll(".section-heading, .about-copy, .education-item, .card, .skill-row, .tool-card, .project-card, .gallery-card, .travel-copy, .contact-intro, .social-grid a");
   if ("IntersectionObserver" in window && !reduceMotion.matches) {
     const revealObserver = new IntersectionObserver((entries, observer) => {
       entries.forEach((entry) => {
@@ -258,6 +258,49 @@
       revealObserver.observe(target);
     });
   }
+
+  // --- PDF modal (result cards) ---
+  const pdfModal = document.getElementById("pdfModal");
+  const pdfEmbed = document.getElementById("pdfEmbed");
+  const pdfTitle = document.getElementById("modalPdfTitle");
+  const pdfFallback = document.getElementById("pdfFallback");
+  const pdfFallbackLink = document.getElementById("fallbackLink");
+  const pdfClose = document.getElementById("modalClose");
+
+  function openPdfModal(pdf, title) {
+    if (!pdfModal) return;
+    pdfTitle.textContent = title;
+    pdfEmbed.src = pdf;
+    pdfFallbackLink.href = pdf;
+    pdfFallback.style.display = "none";
+    pdfEmbed.style.display = "block";
+    pdfModal.showModal();
+  }
+
+  function closePdfModal() {
+    if (!pdfModal) return;
+    pdfModal.close();
+    pdfEmbed.src = "";
+    pdfFallback.style.display = "none";
+    pdfEmbed.style.display = "block";
+  }
+
+  document.querySelectorAll(".btn-view").forEach((btn) => {
+    btn.addEventListener("click", (event) => {
+      event.stopPropagation();
+      openPdfModal(btn.dataset.pdf, btn.dataset.title);
+    });
+  });
+
+  pdfClose?.addEventListener("click", closePdfModal);
+  pdfModal?.addEventListener("click", (event) => {
+    if (event.target === pdfModal) closePdfModal();
+  });
+  pdfModal?.addEventListener("contextmenu", (event) => event.preventDefault());
+  pdfEmbed?.addEventListener("contextmenu", (event) => event.preventDefault());
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") closePdfModal();
+  });
 
   const cursorQuery = window.matchMedia("(hover: hover) and (pointer: fine)");
   if (cursorQuery.matches && !reduceMotion.matches) {
