@@ -1,4 +1,4 @@
-(() => {
+﻿(() => {
   const projects = window.portfolioProjects || [];
   const galleryItems = window.portfolioGallery || [];
   const projectGrid = document.querySelector("#project-grid");
@@ -76,7 +76,7 @@
     const arrow = document.createElement("span");
     arrow.className = "project-arrow";
     arrow.setAttribute("aria-hidden", "true");
-    arrow.textContent = "↗";
+    arrow.textContent = "â†—";
     detail.append(category, title, arrow);
     card.append(imageWrap, detail);
     return card;
@@ -244,7 +244,7 @@
     if (!event.target.closest(".nav-shell")) setMenuOpen(false);
   });
 
-  const revealTargets = document.querySelectorAll(".section-heading, .about-copy, .education-item, .card, .skill-row, .tool-card, .project-card, .gallery-card, .travel-copy, .contact-intro, .social-grid a");
+  const revealTargets = document.querySelectorAll(".section-heading, .about-copy, .education-item, .card, .skill-row, .tool-card, .project-card, .gallery-card, .travel-copy, .contact-intro, .social-grid a, .hobby-card");
   if ("IntersectionObserver" in window && !reduceMotion.matches) {
     const revealObserver = new IntersectionObserver((entries, observer) => {
       entries.forEach((entry) => {
@@ -330,4 +330,4 @@
       if (event.target.closest("a, button")) cursor.classList.remove("is-hovering");
     });
   }
-})();
+  })();

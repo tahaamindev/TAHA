@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   color-scheme: dark;
   --ink: #0b0b0c;
   --ink-soft: #101112;
@@ -1649,6 +1649,89 @@ img {
   pointer-events: none;
 }
 
+/* --- Hobbies & interests (Apple style) --- */
+.hobbies-section {
+  border-top: 1px solid var(--line);
+}
+
+.hobbies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: clamp(20px, 4vw, 34px);
+  margin-top: 12px;
+}
+
+.hobby-card {
+  position: relative;
+  padding: 30px 26px;
+  border-radius: var(--radius-lg);
+  background: var(--panel);
+  border: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: transform var(--motion), border-color var(--motion), background var(--motion);
+}
+
+.hobby-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--line-strong);
+  background: var(--panel-raised);
+}
+
+.hobby-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, .045);
+  display: grid;
+  place-items: center;
+  transition: background var(--motion), border-color var(--motion), transform var(--motion);
+}
+
+.hobby-card:hover .hobby-icon {
+  background: rgba(255, 255, 255, .09);
+  border-color: var(--line-strong);
+}
+
+.hobby-icon svg {
+  width: 19px;
+  height: 19px;
+  color: var(--text-soft);
+  transition: color var(--motion);
+}
+
+.hobby-card:hover .hobby-icon svg {
+  color: var(--text);
+}
+
+.hobby-title {
+  margin: 0;
+  font-size: clamp(16px, 1.9vw, 19px);
+  font-weight: 600;
+  letter-spacing: -.02em;
+  color: var(--text);
+}
+
+.hobby-copy {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.hobby-card.reveal:nth-child(2) {
+  transition-delay: 60ms;
+}
+
+.hobby-card.reveal:nth-child(3) {
+  transition-delay: 110ms;
+}
+
+.hobby-card.reveal:nth-child(4) {
+  transition-delay: 160ms;
+}
 .contact-section {
   display: grid;
   padding-top: 145px;
@@ -3663,3 +3746,10 @@ dialog {
     padding-inline: 10px;
   }
 }
+
+
+
+
+
+
+
