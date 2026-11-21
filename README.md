@@ -57,7 +57,7 @@ Social links are in the contact section of `index.html`. Update them there if ne
 4. Select **Pages** in the sidebar.
 5. Under **Build and deployment**, choose **Deploy from a branch**.
 6. Select the branch containing the site (commonly `main`) and the `/ (root)` folder, then save.
-7. Wait for GitHub Pages to finish publishing. Use the URL shown in **Settings → Pages** to confirm the published site.
+7. Wait for GitHub Pages to finish publishing. Use the URL shown in **Settings  Pages** to confirm the published site.
 8. Add the final URL as the canonical URL and use absolute URLs for the social-sharing metadata.
 
 For a project repository, the Pages URL is usually `https://<username>.github.io/<repository>/`. For a user site repository named `<username>.github.io`, the URL is usually `https://<username>.github.io/`. The final URL is not configured or claimed here because deployment has not been performed.
@@ -67,3 +67,4 @@ For a project repository, the Pages URL is usually `https://<username>.github.io
 The project cards feature T-Attendie, AIMZ, JK Collection, Music and Tersynex Agency. Each project has a source repository and a live preview linked in its detail dialog. The first three projects use their supplied GIF previews, while Music and Tersynex Agency use their supplied screenshots. Tersynex Agency is an early-stage independent project started in September 2026.
 
 The supplied portrait files are `images/main.png` and `images/about.png`; this page uses the optimized `main.webp` image and keeps `main.png` for social sharing. The supplied project previews are the three GIFs plus `images/music.jpg` and `images/Tersynex.jpg`. The creative section presents Tersynex Agency. No CV PDF, sketch images or science-project photos were present. Travel is presented only as an interest; no destinations or trips are claimed.
+

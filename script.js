@@ -1,4 +1,4 @@
-﻿(() => {
+(() => {
   const projects = window.portfolioProjects || [];
   const galleryItems = window.portfolioGallery || [];
   const projectGrid = document.querySelector("#project-grid");
@@ -76,7 +76,7 @@
     const arrow = document.createElement("span");
     arrow.className = "project-arrow";
     arrow.setAttribute("aria-hidden", "true");
-    arrow.textContent = "â†—";
+    arrow.textContent = "";
     detail.append(category, title, arrow);
     card.append(imageWrap, detail);
     return card;
@@ -285,13 +285,6 @@
     pdfEmbed.style.display = "block";
   }
 
-  document.querySelectorAll(".btn-view").forEach((btn) => {
-    btn.addEventListener("click", (event) => {
-      event.stopPropagation();
-      openPdfModal(btn.dataset.pdf, btn.dataset.title);
-    });
-  });
-
   pdfClose?.addEventListener("click", closePdfModal);
   pdfModal?.addEventListener("click", (event) => {
     if (event.target === pdfModal) closePdfModal();
@@ -331,3 +324,5 @@
     });
   }
   })();
+
+

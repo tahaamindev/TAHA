@@ -10,8 +10,8 @@ window.portfolioProjects = [
     preview: "https://tahaamindev.github.io/AIMZ/"
   },
   {
-    name: "T‑Attendie",
-    category: "Web app · PWA",
+    name: "T-Attendie",
+    category: "Web app , PWA",
     description: "An attendance-focused web app with student management, QR workflows and export tools, presented as an installable PWA.",
     image: "images/T-Attendie.gif",
     imageAlt: "T-Attendie attendance app interface showing session, student and QR card options",
@@ -51,7 +51,7 @@ window.portfolioProjects = [
   },
   {
     name: "Toolify",
-    category: "Tool library · Web app",
+    category: "Tool library , Web app",
     description: "A personal cloud-synced tool library to save, organize and explore web tools in one place. It includes categories, an Add Tool form, saved favorites, notes, a music player and theme support.",
     image: "images/toolify.jpg",
     imageAlt: "Toolify tool library homepage showing categories, add tool form and saved tools grid",
@@ -70,3 +70,4 @@ window.portfolioGallery = [
     link: "https://tersynex.github.io/agency/"
   }
 ];
+

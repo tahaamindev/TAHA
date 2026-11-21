@@ -1,5 +1,5 @@
 
-M TAHA AMIN — COMPLETE PORTFOLIO SPECIFICATION
+M TAHA AMIN - COMPLETE PORTFOLIO SPECIFICATION
 FOR GITHUB COPILOT AGENT
 ============================================================
 
@@ -89,7 +89,7 @@ my education, coding journey, projects, AI experiments, creative work, interests
 and contact links.
 
 ============================================================
-4. VISUAL DESIGN — APPLE-INSPIRED, NOT A CLONE
+4. VISUAL DESIGN - APPLE-INSPIRED, NOT A CLONE
 ============================================================
 
 Design an original portfolio inspired by Apple's minimalism, typography,
@@ -586,7 +586,7 @@ GitHub:
 https://github.com/tahaamindev
 
 LinkedIn:
-https://www.linkedin.com/in/taha-amin-undefined-9a4148438/
+https://www.linkedin.com/in/m-taha-amin/
 
 Facebook:
 https://www.facebook.com/people/M-Taha-Amin/61593492703992/
@@ -721,7 +721,7 @@ Implement:
 - Correct relative paths.
 
 Suggested title:
-M Taha Amin — Web Developer & AI Explorer
+M Taha Amin - Web Developer & AI Explorer
 
 You may improve the wording if a better original title fits the design.
 
@@ -943,3 +943,4 @@ Inspect the current folder, build the complete portfolio, test it, document it,
 and leave the workspace in a usable state.
 
 END OF SPECIFICATION
+
